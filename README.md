@@ -13,17 +13,17 @@ Additionally, there is a sample `terraform.tfvars` file provided which should be
 ## Commands to run:
 
 Init:
-* `terraform init -backend-config=mariusz-adamczyk-panda-devops-core-14` or `terraform init -reconfigure -backend-config=mariusz-adamczyk-panda-devops-core-14`
+* `terraform init -backend-config=mariusz-adamczyk-panda-devops-core-14` or `terraform init -reconfigure -backend-config=xxx-xxx-panda-devops-core-14`
 
 Check what will be done:
-* `terraform plan` or `terraform plan -var mariusz-adamczyk-panda-devops-core-14`
+* `terraform plan` or `terraform plan -var xxx-xxx-panda-devops-core-14`
 
 Apply configuration:
-* `terraform apply -auto-approve` or `terraform apply -auto-approve -var mariusz-adamczyk-panda-devops-core-14`
+* `terraform apply -auto-approve` or `terraform apply -auto-approve -var xxx-xxx-panda-devops-core-14`
 
 Check the loadbalancer readiness:
 * `watch -n 1 curl -s alb-xxxxxxxxx.us-east-1.elb.amazonaws.com`
 
 ## Destroy environment:
 
-* `terraform destroy -auto-approve` or `terraform destroy -auto-approve -var mariusz-adamczyk-panda-devops-core-14`
+* `terraform destroy -auto-approve` or `terraform destroy -auto-approve -var xxx-xxx-panda-devops-core-14`
